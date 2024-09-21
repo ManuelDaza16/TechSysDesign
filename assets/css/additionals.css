@@ -1,0 +1,32 @@
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    /* Color del subrayado */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* Cambia el color del texto al pasar el cursor */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    /* El subrayado se extiende completamente al hacer hover */
+}
+
+/* Ajuste para el espaciado en contenido con navbar fijo */
+body {
+    padding-top: 70px;
+    /* Ajusta el padding-top para no solapar contenido con el navbar */
+}
