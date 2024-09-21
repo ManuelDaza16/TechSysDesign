@@ -30,3 +30,12 @@ body {
     padding-top: 70px;
     /* Ajusta el padding-top para no solapar contenido con el navbar */
 }
+
+/* Efecto zoom para la imagen cuando se pasa el cursor */
+.profile-img {
+    transition: transform 0.4s ease; /* Duración y suavidad de la transición */
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se hace hover */
+}
