@@ -1,21 +1,25 @@
 /* Modo claro - Efecto luces de estudio sutil */
 body {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 245, 245, 0.9) 50%, rgba(235, 235, 235, 0.9) 100%);
-    color: #000; /* Texto negro por defecto */
+    background: #fff;
+    color: #000;
+    /* Texto negro por defecto */
     transition: background 0.5s ease;
 }
 
 /* Modo oscuro - Efecto luces de estudio sutil */
 body.dark {
-    background: linear-gradient(135deg, rgba(18, 18, 18, 0.9) 0%, rgba(25, 25, 25, 0.9) 50%, rgba(35, 35, 35, 0.9) 100%);
-    color: #fff; /* Texto blanco en modo oscuro */
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.9) 0%, rgba(25, 25, 25, 0.9) 50%, rgba(18, 18, 18, 0.9) 100%);
+    color: #fff;
+    /* Texto blanco en modo oscuro */
     transition: background 0.5s ease;
 }
 
 /* Barra de navegación y botones personalizados */
-.navbar, footer {
-    background-color: rgba(255, 255, 255, 0.8) !important;
-    backdrop-filter: blur(8px); /* Efecto blur */
+.navbar,
+footer {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(8px);
+    /* Efecto blur */
     transition: background 0.5s ease;
 }
 
@@ -66,12 +70,14 @@ body {
 
 /* Modo oscuro para la barra de navegación (nav) */
 body.dark .navbar {
-    background-color: rgba(31, 31, 31, 0.8) !important; /* Fondo oscuro */
+    background-color: rgba(31, 31, 31, 0.8) !important;
+    /* Fondo oscuro */
     border-bottom: 1px solid #333 !important;
 }
 
 body.dark .navbar a.nav-link {
-    color: #ffffff !important; /* Texto blanco */
+    color: #ffffff !important;
+    /* Texto blanco */
 }
 
 body.dark .navbar .btn-outline-primary {
@@ -85,6 +91,39 @@ body.dark .navbar .btn-outline-primary:hover {
 }
 
 body.dark footer {
-    background-color: rgba(31, 31, 31, 0.8) !important; /* Fondo oscuro */
+    background-color: rgba(31, 31, 31, 0.8) !important;
+    /* Fondo oscuro */
     color: #ffffff !important;
+}
+
+
+.text-gradient {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body p {
+    color: #6c757d;
+}
+
+.bg-form-column {
+    border-radius: 0 20px 20px 0;
+    object-fit: cover;
+    height: 80vh;
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    /* Esto asegura que la imagen siga el borde redondeado */
+}
+
+.shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Mejora el efecto de sombra */
 }
