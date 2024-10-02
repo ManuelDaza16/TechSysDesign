@@ -127,3 +127,8 @@ body.dark footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     /* Mejora el efecto de sombra */
 }
+
+/* Modifica el viewport menos el espcio ocupado por el nadvar */
+.min-vh-100-custom {
+    min-height: calc(100vh - 70px) !important;
+}
