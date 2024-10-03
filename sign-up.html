@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,136 +48,161 @@
                     </ul>
                     <!-- Botón de Inscripción -->
                     <a class="btn btn-outline-primary ms-lg-3 rounded-1" href="sign-up.html">Inscríbete</a>
-
-                    <!-- Botón para cambiar entre light y dark mode con iconos -->
-                    <button id="theme-toggle" class="btn btn-outline-secondary ms-lg-3">
-                        <i id="theme-icon" class="bi bi-moon"></i> <!-- Este será el icono de la luna -->
-                    </button>
-
                 </div>
             </div>
         </nav>
 
-        <!-- Contenido-->
-        <div class="container-fluid py-5">
-            <div class="container  ">
-                <div class="row justify-content-center align-items-center">
-
-                    <div class="col-12  col-xl-5 col-xxl-5">
-                        <div class="d-flex justify-content-center">
-                            <div class="profile bg-gradient-primary-to-secondary rounded-circle ">
-                                <img class="profile-img img-flex " src="./assets/img/image-student.png" alt="..." />
-                            </div>
-                        </div>
+        <!-- Sección principal con fondo degradado animado -->
+        <section class="py-4 bg-primary h-75">
+            <div class="container">
+                <div class="row justify-content-center align-content-center">
+                    <!-- Columna izquierda: Beneficios -->
+                    <div class="col-12 col-md-4 mb-5 mb-md-0 text-white">
+                        <h2 class="fw-bold mb-4">¿Por qué inscribirte?</h2>
+                        <p class="mb-4">Ser parte de nuestro programa es mucho más que una simple educación, es una
+                            oportunidad para transformar tu vida y alcanzar tus metas.</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon bg-white text-primary rounded-4 p-3 me-3 shadow">
+                                        <i class="bi bi-award-fill fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Título Reconocido</h5>
+                                        <p>Obtén un título con prestigio nacional e internacional que abrirá las puertas
+                                            a nuevas oportunidades.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon bg-white text-primary rounded-4 p-3 me-3 shadow">
+                                        <i class="bi bi-laptop-fill fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Acceso a Tecnología de Vanguardia</h5>
+                                        <p>Utiliza las herramientas más innovadoras del mercado para impulsar tu
+                                            formación y desarrollo.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex align-items-start">
+                                    <div class="icon bg-white text-primary rounded-4 p-3 me-3 shadow">
+                                        <i class="bi bi-people-fill fs-4"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold">Red de Contactos y Comunidad</h5>
+                                        <p>Únete a una red de profesionales y estudiantes apasionados que compartirán
+                                            tus metas y aspiraciones.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="col-12 col-xl-7 col-xxl-7">
-                        <!-- Card para el formulario -->
-                        <div class="card shadow-lg bg-light">
-                            <!-- Fondo degradado -->
-                            <div class="card-header text-center text-gradient">
-                                <h2 class="fw-bold">¡INSCRIBETE A NUESTRO PROGRAMA!</h2>
-                            </div>
-                            <div class="card-body p-4">
-                                <!-- Inicio del formulario -->
-                                <form id="registrationForm" method="POST" >
+                    <!-- Columna derecha: Formulario -->
+                    <div class="col-12 col-md-4">
+                        <div class="card shadow border-0 rounded-4">
+                            <div class="card-body p-5">
+                                <h3 class="fw-bold text-center mb-4 text-gradient">¡INSCRÍBETE AHORA!</h3>
+                                <form id="registrationForm" method="POST">
                                     <div class="row">
                                         <!-- Nombres -->
-                                        <div class="col-12 col-md-9 col-xl-9 col-xxl-9 my-1">
-                                            <label for="name" class=" form-label">Nombres</label>
-                                            <input type="text" class="form-control" id="name" placeholder="" required>
+                                        <div class="col-12 col-md-12 mb-3">
+                                            <label for="name" class="form-label">Nombres</label>
+                                            <input type="text" class="form-control" id="name" required>
                                         </div>
-                                        <!-- Genero -->
-                                        <div class="col-12 col-md-3 col-xl-3 col-xxl-3 col my-1">
-                                            <label for="gender" class="form-label">Genero</label>
+
+                                        <!-- Género -->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="gender" class="form-label">Género</label>
                                             <select class="form-select" id="gender" required>
-                                                <option value="flaw"></option>
+                                                <option value=""></option>
                                                 <option value="female">Femenino</option>
                                                 <option value="male">Masculino</option>
                                             </select>
                                         </div>
+
                                         <!-- Primer Apellido -->
-                                        <div class="col-12 col-md-6 col-xl-6 col-xxl-6 my-1">
-                                            <label for="firstSurmane" class="form-label">Primer Apellido</label>
-                                            <input type="text" class="form-control" id="firstSurmane" placeholder=""
-                                                required>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="firstSurname" class="form-label">Primer Apellido</label>
+                                            <input type="text" class="form-control" id="firstSurname" required>
                                         </div>
+
                                         <!-- Segundo Apellido -->
-                                        <div class="col-12 col-md-6 col-xl-6 col-xxl-6 my-1">
-                                            <label for="secondSurmane" class="form-label">Segundo Apellido</label>
-                                            <input type="text" class="form-control" id="secondSurmane"
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="secondSurname" class="form-label">Segundo Apellido</label>
+                                            <input type="text" class="form-control" id="secondSurname"
                                                 placeholder="Opcional">
                                         </div>
+
                                         <!-- Tipo de Documento -->
-                                        <div class="col-3 col-sm-2 col-md-2 col-xl-2 col-xxl-2 my-1">
-                                            <label for="typeDoc" class="form-label">Tipo</label>
-                                            <select class="form-select" id="typeDoc" required>
-                                                <option value="flaw"></option>
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="typeDoc" class="form-label">Tipo de Documento</label>
+                                            <select class="form-select form-select-lg" id="typeDoc" required>
+                                                <option value=""></option>
                                                 <option value="cc">CC</option>
                                                 <option value="ti">TI</option>
                                                 <option value="pas">PAS</option>
-                                                <option value="ce">CE</option>
-                                                <option value="ppt">PPT</option>
                                             </select>
                                         </div>
-                                        <!-- Documento -->
-                                        <div class="col-9 col-sm-10 col-md-10 col-xl-5 col-xxl-5 my-1">
-                                            <label for="numberDoc" class="form-label">Numero Documento</label>
-                                            <input type="number" class="form-control" id="numberDoc" placeholder=""
-                                                required>
+
+                                        <!-- Número Documento -->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="numberDoc" class="form-label">Número Documento</label>
+                                            <input type="number" class="form-control" id="numberDoc" required>
                                         </div>
-                                        <!-- Fecha de Expedicion de Documento -->
-                                        <div class="col-12 col-md-6 col-xl-5 col-xxl-5 my-1">
-                                            <label for="issueDate" class="form-label">Fecha de Expedicion</label>
-                                            <input type="date" class="form-control" id="issueDate"
-                                                placeholder="Segundo Apellido (Opcional)">
-                                        </div>
+
                                         <!-- Fecha de Nacimiento -->
-                                        <div class="col-12 col-md-6 col-xl-6 col-xxl-6 my-1">
+                                        <div class="col-12 col-md-6 mb-3">
                                             <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
-                                            <input type="date" class="form-control" id="birthDate" placeholder=""
-                                                required>
+                                            <input type="date" class="form-control" id="birthDate" required>
                                         </div>
-                                        <!-- Celular -->
-                                        <div class="col-12 col-md-6 col-xl-6 col-xxl-6 my-1">
-                                            <label for="numberPhone" class="form-label">Celular</label>
-                                            <input type="number" class="form-control" id="numberCell" placeholder=""
-                                                required>
-                                        </div>
-                                        <!-- Teléfono -->
-                                        <div class="col-12 col-md-6 col-xl-6 col-xxl-6 my-1">
-                                            <label for="numberPhone" class="form-label">Teléfono</label>
-                                            <input type="number" class="form-control" id="numberPhone" placeholder=""
-                                                required>
-                                        </div>
-                                        <!-- Correo electrónico -->
-                                        <div class="col-12 col-md-12 col-xl-6 col-xxl-6 my-1">
+
+                                        <!-- Correo Electrónico -->
+                                        <div class="col-12 col-md-6 mb-3">
                                             <label for="email" class="form-label">Correo Electrónico</label>
                                             <input type="email" class="form-control" id="email"
                                                 placeholder="nombre@ejemplo.com" required>
                                         </div>
-                                        <!-- Terminos y condiciones -->
-                                        <div class="col-12 my-1">
-                                            <div class="form-check mb-3">
-                                                <input type="checkbox" class="form-check-input" id="terminos" required>
-                                                <label class="form-check-label" for="terminos">Acepto los términos y
+
+                                        <!-- Celular -->
+                                        <div class="col-12 col-md-6 mb-3">
+                                            <label for="numberCell" class="form-label">Celular</label>
+                                            <input type="number" class="form-control" id="numberCell" required>
+                                        </div>
+
+                                        <!-- Términos y condiciones -->
+                                        <div class="col-12 mb-3">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="terms" required>
+                                                <label class="form-check-label" for="terms">Acepto los términos y
                                                     condiciones</label>
                                             </div>
                                         </div>
-                                        <div class="container text-center">
-                                            <!-- Botón de Enviar -->
+
+                                        <!-- Botón de Enviar -->
+                                        <div class="text-center">
                                             <button type="submit"
-                                                class="btn btn-primary btn-lg bg-gradient-primary-to-secondary">Enviar
-                                                Inscripción</button>
+                                                class="btn btn-primary btn-lg w-100 border-0 bg-gradient-primary-to-secondary">
+                                                Enviar Inscripción
+                                            </button>
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Columna de imagen -->
+                    <div class="col-md-4 d-none d-md-block">
+                        <img src="./assets/img/image-student.png" class="img-fluid" alt="Estudiante">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </main>
     <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
