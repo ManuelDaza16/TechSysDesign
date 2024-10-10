@@ -106,28 +106,33 @@
                         <div class="card shadow border-0 rounded-4">
                             <div class="card-body p-5">
                                 <h3 class="fw-bold text-center mb-4 text-gradient">¡INSCRÍBETE AHORA!</h3>
-                                <form id="registrationForm" method="POST">
+                                <form id="registrationForm" method="POST" novalidate>
                                     <div class="row">
                                         <!-- Nombres -->
                                         <div class="col-12 col-md-12 mb-3">
                                             <label for="name" class="form-label">Nombres</label>
-                                            <input type="text" class="form-control" id="name" required>
+                                            <input type="text" class="form-control" id="name"
+                                                placeholder="Ej: Juan Carlos" required>
+                                            <div class="invalid-feedback">Por favor, ingrese sus nombres.</div>
                                         </div>
 
                                         <!-- Género -->
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="gender" class="form-label">Género</label>
                                             <select class="form-select" id="gender" required>
-                                                <option value=""></option>
+                                                <option value="">Seleccione su género</option>
                                                 <option value="female">Femenino</option>
                                                 <option value="male">Masculino</option>
                                             </select>
+                                            <div class="invalid-feedback">Por favor, seleccione su género.</div>
                                         </div>
 
                                         <!-- Primer Apellido -->
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="firstSurname" class="form-label">Primer Apellido</label>
-                                            <input type="text" class="form-control" id="firstSurname" required>
+                                            <input type="text" class="form-control" id="firstSurname"
+                                                placeholder="Ej: Pérez" required>
+                                            <div class="invalid-feedback">Por favor, ingrese su primer apellido.</div>
                                         </div>
 
                                         <!-- Segundo Apellido -->
@@ -141,23 +146,30 @@
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="typeDoc" class="form-label">Tipo de Documento</label>
                                             <select class="form-select form-select-lg" id="typeDoc" required>
-                                                <option value=""></option>
+                                                <option value="">Seleccione su tipo de documento</option>
                                                 <option value="cc">CC</option>
                                                 <option value="ti">TI</option>
                                                 <option value="pas">PAS</option>
                                             </select>
+                                            <div class="invalid-feedback">Por favor, seleccione el tipo de documento.
+                                            </div>
                                         </div>
 
                                         <!-- Número Documento -->
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="numberDoc" class="form-label">Número Documento</label>
-                                            <input type="number" class="form-control" id="numberDoc" required>
+                                            <input type="number" class="form-control" id="numberDoc"
+                                                placeholder="Ej: 1234567890" required>
+                                            <div class="invalid-feedback">Por favor, ingrese el número de documento.
+                                            </div>
                                         </div>
 
                                         <!-- Fecha de Nacimiento -->
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="birthDate" class="form-label">Fecha de Nacimiento</label>
                                             <input type="date" class="form-control" id="birthDate" required>
+                                            <div class="invalid-feedback">Por favor, ingrese su fecha de nacimiento.
+                                            </div>
                                         </div>
 
                                         <!-- Correo Electrónico -->
@@ -165,12 +177,16 @@
                                             <label for="email" class="form-label">Correo Electrónico</label>
                                             <input type="email" class="form-control" id="email"
                                                 placeholder="nombre@ejemplo.com" required>
+                                            <div class="invalid-feedback">Por favor, ingrese un correo electrónico
+                                                válido.</div>
                                         </div>
 
                                         <!-- Celular -->
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="numberCell" class="form-label">Celular</label>
-                                            <input type="number" class="form-control" id="numberCell" required>
+                                            <input type="number" class="form-control" id="numberCell"
+                                                placeholder="Ej: 3001234567" required>
+                                            <div class="invalid-feedback">Por favor, ingrese su número de celular.</div>
                                         </div>
 
                                         <!-- Términos y condiciones -->
@@ -179,6 +195,8 @@
                                                 <input type="checkbox" class="form-check-input" id="terms" required>
                                                 <label class="form-check-label" for="terms">Acepto los términos y
                                                     condiciones</label>
+                                                <div class="invalid-feedback">Debe aceptar los términos y condiciones.
+                                                </div>
                                             </div>
                                         </div>
 
